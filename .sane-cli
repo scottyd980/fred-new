@@ -1,0 +1,6 @@
+{
+  "disableAnalytics": false,
+  "database": "disk",
+  "docker": false,
+  "verbose": false
+}

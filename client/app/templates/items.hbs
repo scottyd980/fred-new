@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="col-md-12">
+		{{#each}}
+			<h2><span style="font-family:'Proxima Nova Light'; text-transform:uppercase; font-size: 18px">Project:</span> {{name}}</h2>
+
+			{{#each items}}
+				{{#link-to 'createDocument' this}}<div class="alert alert-success">
+					{{message}} - {{user}} - {{createdAt}}
+					<button {{action 'deleteItem' this}} type="button" class="close" data-dismiss="alert">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+				</div>
+				{{/link-to}}
+			{{/each}}
+		{{/each}}
+	</div>
+</div>

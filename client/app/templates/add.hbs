@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="col-md-6">
+		<div class="form-group">
+			<label>Project Name</label>
+			{{view "select" value=projectName content=projects optionLabelPath="content.name" optionsValuePath="content.id" classNames="form-control"}}
+		</div>
+
+		<div class="form-group">
+			<label>Item Name</label>
+			{{input value=itemName classNames="form-control"}}
+		</div>
+
+		<div class="form-group">
+			<label>User</label>
+			{{input value=userName classNames="form-control"}}
+		</div>
+
+		<div class="form-group">
+			<label>Message</label>
+			{{textarea value=message classNames="form-control"}}
+		</div>
+		<div class="form-group">
+			<button {{action 'addItem'}} class="btn btn-primary btn-block">Add Item To Be Documented</button>
+		</div>
+	</div>
+	<div class="col-md-6">
+
+	</div>
+</div>
